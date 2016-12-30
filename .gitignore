@@ -2,6 +2,8 @@
 logs
 *.log
 npm-debug.log*
+*.hot-update.js
+*.hot-update.json
 
 # Runtime data
 pids
