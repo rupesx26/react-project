@@ -27,11 +27,11 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div>
-      <Header/>
+      
       <div className="app-container">
         <div className="app-content">{this.props.children}</div>
       </div>
-      <Footer/>
+       
       </div>
     );
   }
