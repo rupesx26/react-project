@@ -1,11 +1,20 @@
 import React from 'react';
 import { IndexLink, Link } from 'react-router';
+import Title from './Title';
+
 
 class Header extends React.Component {
   render() {
     const active = { borderBottomColor: '#3f51b5', backgroundColor: '#f1f1f1' };
+    console.log(this.props);
     return (
+     <div>
+     <div>
+       <Title title={this.props.title} />
+     </div>
       <nav className="navbar navbar-default navbar-static-top">
+      
+       <div>{this.props.title}</div>
         <div className="container">
           <div className="navbar-header">
             <button type="button" data-toggle="collapse" data-target="#navbar" className="navbar-toggle collapsed">
@@ -26,6 +35,7 @@ class Header extends React.Component {
           </div>
         </div>
       </nav>
+      </div>
     );
   }
 }
